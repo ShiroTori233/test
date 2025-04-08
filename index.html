@@ -1,0 +1,437 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="image/honor.ico" type="image/x-icon" />
+<link rel="icon" href="image/honor.ico" type="image/x-icon" sizes="32x32">
+<link rel="icon" href="image/honor.ico" type="image/x-icon" sizes="16x16">
+<link rel="icon" href="image/honor.ico" sizes="180x180">
+<title>荣耀首页</title>
+    <style>
+        body {
+            margin: 0; /* 去掉默认的外边距 */
+            padding: 0; /* 去掉默认的内边距 */
+        }
+        html, body {
+            touch-action: pan-y;
+            overscroll-behavior-x: none;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            background: #333;
+            position: fixed; /* 固定菜单栏 */
+            top: 0; /* 保持在页面顶部 */
+            z-index: 1000; /* 确保菜单栏在其他内容之上 */
+        }
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex; /* 关键水平布局属性 */
+        }
+        .menu a {  
+            display: block;
+            padding: 15px 50px;
+            color: white;
+            text-decoration: none;
+            font-size: 200%;
+            white-space: nowrap;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background: #f9f9f9;
+            min-width: 100px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .dropdown:hover .dropdown-content {
+            display: block; /* 鼠标悬停显示下拉菜单 */
+        }
+        .dropdown-content a {
+            color: #333;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        .dropdown-content a:hover {
+            background: #ddd;
+        }
+
+        #huashu {
+            border-collapse: collapse;
+            margin: 0 auto;
+            font-size: 200%;
+            width: 100%;
+            margin-top: 10%;
+            text-align: center;
+        }
+        #huashu th, #huashu td {
+            border: 1px solid black;
+        }
+        #huashu th {
+            background-color:lightblue;
+            text-align: center;
+        }
+        #官网价 {
+            background-color: lightgreen;
+        }
+        #限时优惠 {
+            background-color: lightyellow;
+        }
+        #国补价 {
+            background-color: lightcoral;
+        }
+        #新品 {
+            background-color: orange;
+            color: darkred;
+            font-weight: bold;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li class="dropdown">
+                <a href="#">产品</a>
+                <div class="dropdown-content">
+                    <a href="价格表.html">价格表</a>
+                    <a href="#">手机</a>
+                    <a href="#">平板</a>
+                    <a href="#">电脑</a>
+                    <a href="#">配件</a>
+                </div>
+            </li>
+            <li><a href="#">业务</a></li>
+            <li class="dropdown">
+                <a href="#">暗访</a>
+                <div class="dropdown-content">
+                    <a href="#">暗访常见问题</a>
+                    <a href="产品介绍话术.html">产品介绍话术</a>
+                    <a href="竞品对比话术.html">竞品对比话术</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">支持</a>
+                <div class="dropdown-content">
+                    <a href="#">关于荣耀</a>
+                    <a href="#">服务中心</a>
+                <a href="#">联系方式</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="huashu">
+        <table id="huashu" style="color: darkred;font-weight: bold;">
+            <tr>
+                <th colspan="7" style="background-color: lightgreen;">春季特惠</th>
+            </tr>
+            <tr>
+                <td id="内容">类<br>型</td>
+                <td id="内容">系列</td>
+                <td id="内容">型号</td>
+                <td id="内容">内存</td>
+                <td id="官网价">官网价</td>
+                <td id="限时优惠">限时<br>优惠</td>
+                <td id="国补价">国补价</td>
+            </tr>
+
+            <tr>
+                <td id="参数" rowspan="5">手<br>机</td>
+                <td id="内容" rowspan="2">Maigc<br>系列</td>
+                <td id="内容">Magic6</td>
+                <td id="内容">16+512<br>祁连雪/流云紫</td>
+                <td id="官网价">4999元</td>
+                <td id="限时优惠">3999元</td>
+                <td id="国补价">3499元</td>
+            </tr>
+
+            <tr>
+                <td id="内容">Magic6<br>Pro</td>
+                <td id="内容">12+256<br>海湖青/祁连雪</td>
+                <td id="官网价">5699元</td>
+                <td id="限时优惠">4999元</td>
+                <td id="国补价">4499元</td>
+            </tr>
+
+            <tr>
+                <td id="内容" rowspan="3">数字<br>系列</td>
+                <td id="内容">200</td>
+                <td id="内容">12+256<br>绒黑色/珊瑚粉</td>
+                <td id="官网价">2699元</td>
+                <td id="限时优惠">2099元</td>
+                <td id="国补价">1784.15元</td>
+            </tr>
+
+            <tr>
+                <td id="内容" rowspan="2">200<br>Pro</td>
+                <td id="内容">12+256<br>天海青/月影白</td>
+                <td id="官网价">3499元</td>
+                <td id="限时优惠">2799元</td>
+                <td id="国补价">2379.15元</td>
+            </tr>
+
+            <tr>
+                <td id="内容">16+512<br>珊瑚粉</td>
+                <td id="官网价">3999元</td>
+                <td id="限时优惠">3399元</td>
+                <td id="国补价">2899元</td>
+            </tr>
+
+            <tr>
+                <td id="参数" rowspan="3">穿<br>戴</td>
+                <td id="内容" rowspan="3">手表</td>
+                <td id="内容">GS Pro</td>
+                <td id="内容">4GB+32GB<br>黑色</td>
+                <td id="官网价">1599元</td>
+                <td id="限时优惠">699元</td>
+                <td>无</td>
+            </tr>
+            <tr>
+                <td id="内容">GS3</td>
+                <td id="内容">4GB+32GB</td>
+                <td id="官网价">1299元</td>
+                <td id="限时优惠">699元</td>
+                <td>无</td>
+            </tr>
+            <tr>
+                <td id="内容">Watch2<br>42mm</td>
+                <td id="内容">32MB+4GB<br>粉黛金</td>
+                <td id="官网价">999元</td>
+                <td id="限时优惠">399元</td>
+                <td>无</td>
+            </tr>
+        </table>
+
+        <table id="huashu">
+            <tr>
+                <th colspan="7">国家补贴价格表</th>
+            </tr>
+            <tr>
+                <td id="内容">类<br>型</td>
+                <td id="内容">系列</td>
+                <td id="内容">型号</td>
+                <td id="内容">内存</td>
+                <td id="官网价">官网价</td>
+                <td id="限时优惠">限时<br>优惠</td>
+                <td id="国补价">国补价</td>
+            </tr>
+
+            <tr>
+                <td id="参数" rowspan="100">手<br>机</td>
+                <td id="内容" rowspan="5">折叠<br>系列</td>
+                <td id="内容" rowspan="2">Magic<br>V3</td>
+                <td id="内容">16+512</td>
+                <td id="官网价">9999元</td>
+                <td>无</td>
+                <td>无</td>
+            </tr>
+            <tr>
+                <td id="内容">16+1TB</td>
+                <td id="官网价">10999元</td>
+                <td>无</td>
+                <td>无</td>
+            </tr>
+
+            <tr>
+                <td id="内容" rowspan="3">Magic<br>Vs3</td>
+                <td id="内容">12+256</td>
+                <td id="官网价">6999元</td>
+                <td>无</td>
+                <td>无</td>
+            </tr>
+            <tr>
+                <td id="内容">12+512</td>
+                <td id="官网价">7699元</td>
+                <td>无</td>
+                <td>无</td>
+            </tr>
+            <tr>
+                <td id="内容">16+1TB</td>
+                <td id="官网价">8699元</td>
+                <td>无</td>
+                <td>无</td>
+            </tr>
+
+            <tr>
+                <td id="内容" rowspan="6">Magic<br>系列</td>
+                <td id="内容" rowspan="3">Magic7</td>
+                <td id="内容">12+512</td>
+                <td id="官网价">4799元</td>
+                <td>无</td>
+                <td id="国补价">4299元</td>
+            </tr>
+            <tr>
+                <td id="内容">16+512</td>
+                <td id="官网价">4999元</td>
+                <td>无</td>
+                <td id="国补价">4499元</td>
+            </tr>
+            <tr>
+                <td id="内容">16+1TB</td>
+                <td id="官网价">5499元</td>
+                <td>无</td>
+                <td id="国补价">4999元</td>
+            </tr>
+
+            <tr>
+                <td id="内容" rowspan="3">Magic7<br>Pro</td>
+                <td id="内容">12+256</td>
+                <td id="官网价">5699元</td>
+                <td>无</td>
+                <td id="国补价">5199元</td>
+            </tr>
+            <tr>
+                <td id="内容">16+512</td>
+                <td id="官网价">6199元</td>
+                <td id="限时优惠">5999元</td>
+                <td id="国补价">5499元</td>
+            </tr>
+            <tr>
+                <td id="内容">16+1TB</td>
+                <td id="官网价">6699元</td>
+                <td>无</td>
+                <td>无</td>
+            </tr>
+
+            <tr>
+                <td id="内容" rowspan="8">数字<br>系列</td>
+                <td id="内容" rowspan="3">300</td>
+                <td id="内容">12+256</td>
+                <td id="官网价">2499元</td>
+                <td id="限时优惠">2299元</td>
+                <td id="国补价">1954.15元</td>
+            </tr>
+            <tr>
+                <td id="内容">12+512</td>
+                <td id="官网价">2799元</td>
+                <td id="限时优惠">2599元</td>
+                <td id="国补价">2209.15元</td>
+            </tr>
+            <tr>
+                <td id="内容">16+512</td>
+                <td id="官网价">2999元</td>
+                <td id="限时优惠">2799元</td>
+                <td id="国补价">2379.15元</td>
+            </tr>
+
+            <tr>
+                <td id="内容" rowspan="3">300<br>Pro</td>
+                <td id="内容">12+256</td>
+                <td id="官网价">3399元</td>
+                <td id="限时优惠">3099元</td>
+                <td id="国补价">2634.15元</td>
+            </tr>
+            <tr>
+                <td id="内容">12+512</td>
+                <td id="官网价">3699元</td>
+                <td id="限时优惠">3399元</td>
+                <td id="国补价">2899元</td>
+            </tr>
+            <tr>
+                <td id="内容">16+512</td>
+                <td id="官网价">3999元</td>
+                <td id="限时优惠">3699元</td>
+                <td id="国补价">3199元</td>
+            </tr>
+
+            <tr>
+                <td id="内容" rowspan="2">300<br>Ultra</td>
+                <td id="内容">12+512</td>
+                <td id="官网价">4199元</td>
+                <td id="限时优惠">3699元</td>
+                <td id="国补价">3199元</td>
+            </tr>
+            <tr>
+                <td id="内容">16+1TB</td>
+                <td id="官网价">4699元</td>
+                <td id="限时优惠">4199元</td>
+                <td id="国补价">3699元</td>
+            </tr>
+
+            <tr>
+                <td id="内容" rowspan="6">X<br>系列</td>
+                <td id="内容" rowspan="2">X60</td>
+                <td id="内容">12+256</td>
+                <td id="官网价">1599元</td>
+                <td>无</td>
+                <td id="国补价">1359.15元</td>
+            </tr>
+            <tr>
+                <td id="内容">12+512</td>
+                <td id="官网价">1799元</td>
+                <td>无</td>
+                <td id="国补价">1529.15元</td>
+            </tr>
+
+            <tr>
+                <td id="内容" rowspan="2">X60<br>Pro</td>
+                <td id="内容">12+256</td>
+                <td id="官网价">1999元</td>
+                <td>无</td>
+                <td id="国补价">1699.15元</td>
+            </tr>
+            <tr>
+                <td id="内容">12+512</td>
+                <td id="官网价">2299元</td>
+                <td>无</td>
+                <td id="国补价">1954.15元</td>
+            </tr>
+
+            <tr>
+                <td id="内容" rowspan="2">X60i</td>
+                <td id="内容">12+256</td>
+                <td id="官网价">1599元</td>
+                <td id="限时优惠">1399元</td>
+                <td id="国补价">1189.15元</td>
+            </tr>
+            <tr>
+                <td id="内容">12+512</td>
+                <td id="官网价">1799元</td>
+                <td id="限时优惠">1599元</td>
+                <td id="国补价">1359.15元</td>
+            </tr>
+
+            <tr>
+                <td id="内容" rowspan="4">畅玩<br>系列</td>
+                <td id="新品" rowspan="2">（新品）<br>畅玩60</td>
+                <td id="新品">6+128</td>
+                <td id="官网价">1199元</td>
+                <td>无</td>
+                <td id="国补价">1019.15元</td>
+            </tr>
+            <tr>
+                <td id="新品">8+256</td>
+                <td id="官网价">1399元</td>
+                <td>无</td>
+                <td id="国补价">1189.15元</td>
+            </tr>
+
+            <tr>
+                <td id="内容" rowspan="2">畅玩60<br>Plus</td>
+                <td id="内容">12+256</td>
+                <td id="官网价">1399元</td>
+                <td id="限时优惠">1199元</td>
+                <td id="国补价">1019.15元</td>
+            </tr>
+            <tr>
+                <td id="内容">12+512</td>
+                <td id="官网价">1599元</td>
+                <td id="限时优惠">1399元</td>
+                <td id="国补价">1189.15元</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

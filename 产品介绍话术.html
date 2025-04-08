@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="image/honor.ico" type="image/x-icon" />
+<link rel="icon" href="image/honor.ico" type="image/x-icon" sizes="32x32">
+<link rel="icon" href="image/honor.ico" type="image/x-icon" sizes="16x16">
+<link rel="icon" href="image/honor.ico" sizes="180x180">
+<title>产品介绍话术</title>
+    <style>
+        body {
+            margin: 0; /* 去掉默认的外边距 */
+            padding: 0; /* 去掉默认的内边距 */
+        }
+        html, body {
+            touch-action: pan-y;
+            overscroll-behavior-x: none;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            background: #333;
+            position: fixed; /* 固定菜单栏 */
+            top: 0; /* 保持在页面顶部 */
+            z-index: 1000; /* 确保菜单栏在其他内容之上 */
+        }
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex; /* 关键水平布局属性 */
+        }
+        .menu a {  
+            display: block;
+            padding: 15px 50px;
+            color: white;
+            text-decoration: none;
+            font-size: 200%;
+            white-space: nowrap;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background: #f9f9f9;
+            min-width: 100px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .dropdown:hover .dropdown-content {
+            display: block; /* 鼠标悬停显示下拉菜单 */
+        }
+        .dropdown-content a {
+            color: #333;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        .dropdown-content a:hover {
+            background: #ddd;
+        }
+        img {
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li class="dropdown">
+                <a href="#">产品</a>
+                <div class="dropdown-content">
+                    <a href="价格表.html">价格表</a>
+                    <a href="手机.html">手机</a>
+                    <a href="#">平板</a>
+                    <a href="#">电脑</a>
+                    <a href="#">配件</a>
+                </div>
+            </li>
+            <li><a href="#">业务</a></li>
+            <li class="dropdown">
+                <a href="#">暗访</a>
+                <div class="dropdown-content">
+                    <a href="#">暗访常见问题</a>
+                    <a href="产品介绍话术.html">产品介绍话术</a>
+                    <a href="竞品对比话术.html">竞品对比话术</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">支持</a>
+                <div class="dropdown-content">
+                    <a href="#">关于荣耀</a>
+                    <a href="#">服务中心</a>
+                <a href="#">联系方式</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div  style="text-align: center;margin-top: 10%;">
+    <picture>
+        <source srcset="image/magic7.png" type="image/webp">
+        <source srcset="image/300.png" type="image/webp">
+        <img src="image/magic7.png" style="width: 100%; min-width: 100%;">
+        <img src="image/300.png" style="width: 100%; min-width: 100%;">
+</picture>
+</div>
+</body>
+</html>

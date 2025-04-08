@@ -1,0 +1,348 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="image/honor.ico" type="image/x-icon" />
+<link rel="icon" href="image/honor.ico" type="image/x-icon" sizes="32x32">
+<link rel="icon" href="image/honor.ico" type="image/x-icon" sizes="16x16">
+<link rel="icon" href="image/honor.ico" sizes="180x180">
+<title>竞品对比话术</title>
+    <style>
+        body {
+            margin: 0; /* 去掉默认的外边距 */
+            padding: 0; /* 去掉默认的内边距 */
+        }
+        html, body {
+            touch-action: pan-y;
+            overscroll-behavior-x: none;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            background: #333;
+            position: fixed; /* 固定菜单栏 */
+            top: 0; /* 保持在页面顶部 */
+            z-index: 1000; /* 确保菜单栏在其他内容之上 */
+        }
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex; /* 关键水平布局属性 */
+        }
+        .menu a {  
+            display: block;
+            padding: 15px 50px;
+            color: white;
+            text-decoration: none;
+            font-size: 200%;
+            white-space: nowrap;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background: #f9f9f9;
+            min-width: 100px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .dropdown:hover .dropdown-content {
+            display: block; /* 鼠标悬停显示下拉菜单 */
+        }
+        .dropdown-content a {
+            color: #333;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        .dropdown-content a:hover {
+            background: #ddd;
+        }
+
+        #huashu {
+            border-collapse: collapse;
+            margin: 0 auto;
+            font-size: 200%;
+            width: 100%;
+            margin-top: 10%;
+        }
+        #huashu th, #huashu td {
+            border: 1px solid black;
+            padding: 1%;
+        }
+        #huashu th {
+            background-color:lightblue;
+            text-align: center;
+        }
+        #参数 {
+            background-color: lightgray;
+            width: 15%;
+            text-align: center;
+        }
+        #内容 {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li class="dropdown">
+                <a href="#">产品</a>
+                <div class="dropdown-content">
+                    <a href="价格表.html">价格表</a>
+                    <a href="手机.html">手机</a>
+                    <a href="#">平板</a>
+                    <a href="#">电脑</a>
+                    <a href="#">配件</a>
+                </div>
+            </li>
+            <li><a href="#">业务</a></li>
+            <li class="dropdown">
+                <a href="#">暗访</a>
+                <div class="dropdown-content">
+                    <a href="#">暗访常见问题</a>
+                    <a href="产品介绍话术.html">产品介绍话术</a>
+                    <a href="竞品对比话术.html">竞品对比话术</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">支持</a>
+                <div class="dropdown-content">
+                    <a href="#">关于荣耀</a>
+                    <a href="#">服务中心</a>
+                <a href="#">联系方式</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!--一、荣耀Magic V3 vs OPPO Find N5-->
+    <div class="huashu">
+        <table id="huashu">
+            <tr>
+                <th colspan="2">一、荣耀Magic V3 vs OPPO Find N5</th>
+            </tr>
+            <tr>
+                <td id="参数">1.机身</td>
+                <td id="内容">① N5采用了我们上一代V2的3D打印钛金铰链，散热和体验都差。<br>② N5素皮版本是9.35mm，V3全版本都比它轻薄。</td>
+            </tr>
+            <tr>
+                <td id="参数">2.拍照</td>
+                <td id="内容">V3采用了5000万超大底主摄/潜望式长焦+4000万超广角，拍照特别清晰；N5为了轻薄牺牲影像，拍照不如上一代，前置和广角才800万，不如千元机。</td>
+            </tr>
+            <tr>
+                <td id="参数">3.屏幕</td>
+                <td id="内容">V3采用了顶级120Hz LTPO屏幕，外屏和内屏峰值亮度分别是5000nit和1600nit，太阳底下都看得清，远超N5。</td>
+            </tr>
+            <tr>
+                <td id="参数">4.护眼</td>
+                <td id="内容">V3采用了荣耀绿洲护眼屏，有多重护眼技术，如：干眼友好、AI离焦护眼，能缓解眼疲劳和干眼；N5护眼功能少，高频调光才2160Hz，久看伤眼。</td>
+            </tr>
+            <tr>
+                <td id="参数">5.性能</td>
+                <td id="内容">骁龙8至尊版是8核芯片，N5才7核，用的是割版芯片，性能下降，玩游戏易卡顿。</td>
+            </tr>
+            <tr>
+                <td id="参数">6.续航</td>
+                <td id="内容">V3采用了青海湖电池，内置自研能效增强芯片和都江堰电源管理系统，续航完全不输N5，用得一样久。</td>
+            <tr>
+                <td id="参数">7.信号</td>
+                <td id="内容">V3搭载了自研通讯芯片和超全5G频段，信号强；全版本都支持荣耀鸿燕通讯，紧急情况不掉线；N5只有卫星通讯版本才支持卫星电话，多花1000块都不值。</td>
+            </tr>
+        </table>
+    </div>
+
+    <!--二、荣耀Magic7 vs OPPO Find X8-->
+    <div class="huashu">
+        <table id="huashu">
+            <tr>
+                <th colspan="2">二、荣耀Magic7 vs OPPO Find X8</th>
+            </tr>
+            <tr>
+                <td id="参数">1.拍照</td>
+                <td id="内容">① X8采用了哈苏人像镜头，优化人像效果，适合喜欢拍人像的用户；Magic7三摄均衡，有雅顾人像、鹰眼抓拍等功能，适合多样化拍摄的用户。
+                    <br>② Magic7前置5000万像素，适合玩自拍的用户，X8才3200万。
+                    <br>③ Magic7有可变大光圈，弱光环境表现更佳。
+                </td>
+            </tr>
+            <tr>
+                <td id="参数">2.护眼</td>
+                <td id="内容">Magic7采用了荣耀绿洲护眼屏，有多重护眼技术，如：干眼友好、AI离焦护眼，能缓解眼疲劳和干眼，荣耀的护眼技术一直领先行业。</td>
+            </tr>
+            <tr>
+                <td id="参数">3.性能</td>
+                <td id="内容">① Magic7搭载了骁龙8至尊版，比X8的天玑9400更强，适合高强度使用的用户。
+                    <br>② 骁龙8至尊版目前是安卓最强芯片，比苹果最新的芯片更强，选它一定不会错。
+                </td>
+            </tr>
+            <tr>
+                <td id="参数">4.续航</td>
+                <td id="内容">Magic7采用了青海湖电池，硅碳负极材料含量高容量大，电池耐用，且支持100W快充+80W无线充，X8才80W+50W。</td>
+            </tr>
+            <tr>
+                <td id="参数">5.信号</td>
+                <td id="内容">Magic7搭载了自研通讯芯片和支持优速通VIP网络加速，Pro版本支持双WIFI加速，没网还有卫星通讯，X8连这些都没有。</td>
+            </tr>
+            <tr>
+                <td id="参数">6.防水</td>
+                <td id="内容">Magic7支持IP68和IP69的防尘防水，X8才IP68。</td>
+            <tr>
+        </table>
+    </div>
+
+    <!--三、荣耀Magic7 vs 小米15-->
+    <div class="huashu">
+        <table id="huashu">
+            <tr>
+                <th colspan="2">三、荣耀Magic7 vs 小米15</th>
+            </tr>
+            <tr>
+                <td id="参数">1.拍照</td>
+                <td id="内容">① Magic 7支持3倍光学变焦和最高50倍数字变焦，变焦大，远距离拍摄效果强，小米15才2.6倍光学变焦。
+                    <br>② Magic 7有雅顾人像、鹰眼抓拍等功能，拍摄效果棒。
+                    <br>③ 前置像素也更高。
+                </td>
+            </tr>
+            <tr>
+                <td id="参数">2.护眼</td>
+                <td id="内容">① Magic7采用了荣耀绿洲护眼屏，有多重护眼技术，如：干眼友好、AI离焦护眼，能缓解眼疲劳和干眼，荣耀的护眼技术一直领先行业。
+                    <br>② Magic7峰值亮度是5000nit，太阳底下都看得清，小米15才3200nit。</td>
+            </tr>
+            <tr>
+                <td id="参数">3.续航</td>
+                <td id="内容">Maigc7采用了青海湖电池，硅碳负极材料含量高容量大，电池耐用，且支持100W快充+80W无线充，小米15才90W+50W。</td>
+            </tr>
+            <tr>
+                <td id="参数">4.信号</td>
+                <td id="内容">Magic7搭载了自研通讯芯片和支持优速通VIP网络加速，Pro版本支持双WIFI加速，没网还有卫星通讯，小米15连这些都没有。</td>
+            </tr>
+            <tr>
+                <td id="参数">5.系统</td>
+                <td id="内容">Magic 7系列是全世界唯一达到L3级的AI手机，支持魔法大模型，实现平台级AI，60个月不卡顿，而友商的系统还在时时修bug！
+                    <br>友商的小爱本质上还是个语音助手，它能做的，YOYO能做得更智能，甚至YOYO还能一句话点咖啡，还能帮顾客识别视频中AI换脸，让顾客使用起来更加安全。</td>
+            </tr>
+            <tr>
+                <td id="参数">6.防水</td>
+                <td id="内容">Magic7支持IP68和IP69的防尘防水，小米15才IP68。</td>
+            <tr>
+        </table>
+    </div>
+
+    <!--四、荣耀Magic7 Pro/RSR vs 小米15 Ultra-->
+    <div class="huashu">
+        <table id="huashu">
+            <tr>
+                <th colspan="2">四、荣耀Magic7 Pro/RSR vs 小米15 Ultra</th>
+            </tr>
+            <tr>
+                <td id="参数">1.机身</td>
+                <td id="内容">Magic7 RSR是与保时捷团队联合设计的，拥有满满的保时捷元素，更高级更有辨识度，用着更有面子。</td>
+            </tr>
+            <tr>
+                <td id="参数">2.拍照</td>
+                <td id="内容">虽然像素看上去差不多，但Magic7 Pro/RSR主摄支持可变光圈、AI鹰眼相机、雅顾人像、还搭载激光雷达阵列对焦系统，抓拍、连拍都是行业体验最好的，大王影像长焦30-100倍同样拍得清。</tr>
+            <tr>
+                <td id="参数">3.护眼</td>
+                <td id="内容">Magic7 Pro/RSR支持9大护眼技术，是行业最护眼的手机，频闪频率是某米15 Ultra的两倍不止，是真正零风险护眼的手机。</td>
+            </tr>
+            <tr>
+                <td id="参数">4.系统</td>
+                <td id="内容">Magic7 Pro/RSR搭载MagicOS 9.0，是国内首个达到L3级智能体的手机，可实现手机中的自动驾驶，也是安卓首个接入DeepSeek的手机，AI能力行业最强；某米15 Ultra没有智能体，只支持基础AI功能。</td>
+            </tr>
+            <tr>
+                <td id="参数">5.安全</td>
+                <td id="内容">Magic7 Pro/RSR搭载独立安全存储芯片、3D深感镜头，支付/转账时更安全；还支持智慧隐私通话，不用担心通话会漏音。</tr>
+            <tr>
+                <td id="参数">6.音质</td>
+                <td id="内容">Magic7 Pro/RSR搭载荣耀环绕低音炮，搭配AI空间音频，可实现影院级音效，而小米15 Ultra只是普通的双扬声器。</td>
+            <tr>
+        </table>
+    </div>
+
+    <!--五、荣耀300系列 vs OPPO Reno13系列-->
+    <div class="huashu">
+        <table id="huashu">
+            <tr>
+                <th colspan="2">五、荣耀300系列 vs OPPO Reno13系列</th>
+            </tr>
+            <tr>
+                <td id="参数">1.护眼</td>
+                <td id="内容">荣耀300系列采用了荣耀绿洲护眼屏，有多重护眼技术，如：干眼友好（全系列）、晕车舒缓显示（全系列）、AI离焦护眼（pro和ultra）、圆偏振光护眼（ultra），荣耀的护眼技术一直领先行业。</td>
+            </tr>
+            <tr>
+                <td id="参数">2.性能</td>
+                <td id="内容">荣耀300系列搭载了高通骁龙芯片，reno13是天玑国产芯片，同挡位骁龙芯片性能更强，玩大型3D游戏都能满帧运行，保证60个月不卡顿。</td>
+            </tr>
+            <tr>
+                <td id="参数">3.续航</td>
+                <td id="内容">荣耀300系列采用了青海湖电池，硅碳负极材料含量高容量大，电池耐用，且支持100W快充（全系列）+80W无线充（pro和ultra），reno13才80W。</td>
+            </tr>
+            <tr>
+                <td id="参数">4.功能</td>
+                <td id="内容">① 荣耀300系列搭载了YOYO智能体，还内置现在最火爆的deepseek，无需下载安装，可向它提问任何问题；② 还支持ai修图，永久免费；
+                    <br>③ 还有灵动胶囊、任意门等功能，方便生活和处理工作。
+                </td>
+            </tr>
+            <tr>
+        </table>
+    </div>
+
+    <!--六、荣耀300系列 vs VIVO S20系列-->
+    <div class="huashu">
+        <table id="huashu">
+            <tr>
+                <th colspan="2">六、荣耀300系列 vs VIVO S20系列</th>
+            </tr>
+            <tr>
+                <td id="参数">1.机身</td>
+                <td id="内容">荣耀300是同挡位最轻最薄的手机，同样的屏幕大小S20又厚又重。</tr>
+            <tr>
+                <td id="参数">2.拍照</td>
+                <td id="内容">荣耀300系列支持单反级雅顾人像，拍照更有质感(现场拍照给客户对比，普通拍照模式VS雅顾人像拍照)；并且支持AI驭光引擎，轻松拍出冷白皮。</td>
+
+            </tr>
+            <tr>
+                <td id="参数">3.续航</td>
+                <td id="内容">荣耀300系列采用了青海湖电池，硅碳负极材料含量高容量大，电池耐用，且支持100W快充（全系列）+80W无线充（pro和ultra），S20 Pro版本不支持无线充。</td>
+            </tr>
+        </table>
+    </div>
+    
+    <!--七、荣耀300系列 vs 华为 Nova13系列-->
+    <div class="huashu">
+        <table id="huashu">
+            <tr>
+                <th colspan="2">七、荣耀300系列 vs 华为 Nova13系列</th>
+            </tr>
+            <tr>
+                <td id="参数">1.拍照</td>
+                <td id="内容">荣耀300系列用的是索尼镜头，索尼的拍照技术毋庸置疑，Nova13摄像头传感器都不知道是什么品牌。</td>
+            </tr>
+            <tr>
+                <td id="参数">2.护眼</td>
+                <td id="内容">荣耀300系列最高支持3840Hz的高频调光，Nova13标准版才1440Hz，pro版本才2160Hz，相当于千元机水平。</td>
+            </tr>
+            <tr>
+                <td id="参数">3.性能</td>
+                <td id="内容">荣耀300系列搭载了高通骁龙芯片，Nova13是麒麟8000，技术不成熟，容易发烫，APP兼容性差，出国没有GMS。</td>
+            </tr>
+            <tr>
+                <td id="参数">4.续航</td>
+                <td id="内容">荣耀300系列采用了青海湖电池，硅碳负极材料含量高容量大，电池耐用，且支持100W快充（全系列）+80W无线充（Pro和Ultra），Nova13 Pro版不支持无线充。</td>
+            </tr>
+            <tr>
+                <td id="参数">5.价格</td>
+                <td id="内容">众所周知，华为手机低配高价，还是荣耀更实在。</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
